@@ -573,13 +573,13 @@ footer {
     .contact-form .btn-main { padding: 10px 25px; font-size: 0.85rem; }
 
     /* Nav responsive */
-    .nav-container div { flex-direction: column; align-items: center; gap: 5px; }
-    .btn-nav { padding: 6px 12px; font-size: 0.7rem; }
+    .nav-container div { gap: 5px; }
+    .btn-nav { padding: 4px 8px; font-size: 0.6rem; }
 
     /* Header carta */
-    header div { flex-direction: column; gap: 5px; }
-    .back-btn { padding: 6px 10px; font-size: 0.8rem; }
+    header div { gap: 5px; }
+    .back-btn { padding: 4px 8px; font-size: 0.7rem; }
 
     /* Logo y h1 en móvil */
-    .logo, h1 { font-size: 1.4rem; }
+    .logo, h1 { font-size: 0.8rem !important; white-space: nowrap !important; letter-spacing: 0.5px !important; display: inline-block; }
 }
