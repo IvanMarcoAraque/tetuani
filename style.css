@@ -583,3 +583,12 @@ footer {
     /* Logo y h1 en móvil */
     .logo, h1 { font-size: 0.8rem !important; white-space: nowrap !important; letter-spacing: 0.5px !important; display: inline-block; }
 }
+
+@media (max-width: 400px) {
+    /* Ajustes extra para iPhone 16 y móviles estrechos */
+    .logo, h1 { font-size: 0.7rem !important; }
+    .btn-nav { padding: 3px 6px; font-size: 0.55rem; }
+    .back-btn { padding: 3px 6px; font-size: 0.65rem; }
+    .nav-container div { gap: 3px; }
+    header div { gap: 3px; }
+}
