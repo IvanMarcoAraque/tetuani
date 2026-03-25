@@ -581,7 +581,18 @@ footer {
     .back-btn { padding: 4px 8px; font-size: 0.7rem; }
 
     /* Logo y h1 en móvil */
-    .logo, h1 { font-size: 0.8rem !important; white-space: nowrap !important; letter-spacing: 0.5px !important; display: inline-block; }
+    .logo { font-size: 1.4rem !important; white-space: nowrap !important; letter-spacing: 0.5px !important; display: inline-block; }
+    .hero h1 { font-size: 2.2rem !important; line-height: 1.1; }
+    header h1 { font-size: 1.7rem !important; }
+    .contact-info h2 { font-size: 1.7rem !important; }
+}
+
+@media (min-width: 481px) and (max-width: 650px) {
+    /* Móviles grandes / phablets */
+    .hero h1 { font-size: 2.3rem; }
+    .logo, h1 { font-size: 1.8rem !important; }
+    .section-title { font-size: 2.5rem; }
+    .contact-info h2 { font-size: 2rem; }
 }
 
 @media (max-width: 400px) {
