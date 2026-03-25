@@ -52,6 +52,31 @@
         </section>
     </div>
 
+<script>
+document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se recargue al enviar
+
+    // 1. Capturamos los datos usando los IDs de tu HTML
+    const nombre = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('message').value;
+    
+    // 2. Número de teléfono del negocio (Tetuani)
+    const telefonoNegocio = "34697242656"; 
+    
+    // 3. Formateamos el mensaje para WhatsApp
+    // %0A es un salto de línea
+    const texto = `*NUEVO CONTACTO WEB* 📝%0A%0A` +
+                  `*Nombre:* ${nombre}%0A` +
+                  `*Email:* ${email}%0A` +
+                  `*Mensaje:* ${mensaje}`;
+
+    // 4. Creamos la URL y abrimos WhatsApp
+    const urlWhatsApp = `https://wa.me/${telefonoNegocio}?text=${texto}`;
+    window.open(urlWhatsApp, '_blank');
+});
+</script>
+
     <a href="https://wa.me/34697242656?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20en%20Tetuani%20🍔" class="floating-btn" target="_blank">
         <span style="font-size: 1.8rem;">📱</span>
     </a>
