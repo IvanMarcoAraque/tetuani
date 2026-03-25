@@ -57,6 +57,7 @@ nav { position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
     color: var(--white); 
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 2.5rem;
 }
 
 .logo span, h1 span { color: var(--main-orange); }
