@@ -599,7 +599,7 @@ footer {
     /* Ajustes extra para iPhone 16 y móviles estrechos */
     .logo, h1 { font-size: 1.2rem !important; }
     .btn-nav { padding: 3px 6px; font-size: 0.75rem; }
-    .back-btn { padding: 3px 6px; font-size: 0.65rem; }
+    .back-btn { padding: 3px 6px; font-size: 0.85rem; }
     .nav-container div { gap: 3px; }
     header div { gap: 3px; }
 }
