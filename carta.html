@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta Oficial | Tetuani</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --main-color: #ff6600; /* Naranja/Amarillo de su carta */ --dark: #121212; --white: #ffffff; --gray: #222; }
@@ -34,7 +35,7 @@
         .extras-box p { display: flex; justify-content: space-between; max-width: 300px; margin: 5px auto; font-size: 1.1rem; }
 
         /* Botón Flotante WhatsApp */
-        .floating-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.5); z-index: 1000; }
+        .floating-btn { position: fixed; bottom: 20px; right: 20px; background: var(--main-orange); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.5); z-index: 1000; }
     </style>
 </head>
 <body>
@@ -120,6 +121,7 @@
         <p><span>Extra Huevo / Queso</span> <span>+0.50€</span></p>
     </div>
 
+
     <h2 class="section-title">Bebidas</h2>
     <div class="menu-grid">
         <div class="menu-item"><div class="item-header"><span class="item-name">Refrescos (Con o sin gas)</span><span class="item-price">1.80€</span></div></div>
@@ -129,7 +131,14 @@
 
 </div>
 
-<a href="https://wa.me/34697242656?text=¡Hola!%20He%20visto%20la%20carta%20y%20quiero%20hacer%20un%20pedido%20🍔" class="floating-btn" target="_blank">📱</a>
+<a href="https://wa.me/34697242656?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20en%20Tetuani%20🍔" 
+   class="floating-btn" 
+   target="_blank">
+   <span style="font-size: 1.8rem;">📱</span>
+</a>
 
+    <footer>
+        <p>© 2026 Tetuani. Desarrollado por Iván Marco.</p>
+    </footer>
 </body>
 </html>
