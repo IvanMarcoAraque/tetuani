@@ -12,7 +12,10 @@
     <nav>
         <div class="nav-container">
             <div class="logo">TETU<span>ANI</span></div>
-            <a href="https://wa.me/34697242656" class="btn-nav">PEDIR AHORA</a>
+            <div>
+                <a href="contacto.html" class="btn-nav">CONTACTO</a>
+                <a href="https://wa.me/34697242656" class="btn-nav">PEDIR AHORA</a>
+            </div>
         </div>
     </nav>
 
@@ -25,16 +28,16 @@
         </div>
     </header>
 
-<section id="carta-preview" style="padding: 80px 0; text-align: center;">
+<section id="carta-preview">
         <div class="container">
-            <h2 class="section-title" style="color: white; font-family: 'Oswald'; font-size: 3rem;">
-                DESCUBRE NUESTRA <span style="color: var(--main-color);">CARTA</span>
+            <h2 class="section-title">
+                DESCUBRE NUESTRA <span> CARTA</span>
             </h2>
-            <p style="color: #bbb; max-width: 700px; margin: 20px auto 40px; font-size: 1.2rem;">
+            <p>
                 Desde nuestros famosos Pasticcios gratinados hasta las Pizzas y Tacos más brutales de Alfara. 
                 Todo preparado al momento para que lo disfrutes aquí o en casa.
             </p>
-            <a href="carta.html" class="btn-main" style="text-decoration: none; padding: 20px 60px; font-size: 1.3rem; border-radius: 50px; display: inline-block; font-weight: bold; transition: 0.3s;">
+            <a href="carta.html" class="btn-main">
                 VER CARTA COMPLETA 🔥
             </a>
         </div>
@@ -51,14 +54,14 @@
                         <p>📞 Teléfono: 697 24 26 56</p>
                     </div>
                     <a href="https://www.google.com/maps/dir//Carrer+Zorrilla,+7,+46113+Alfara+del+Patriarca,+Valencia/" 
-                       class="btn-main" style="width: 100%; text-align: center;" target="_blank">
+                       class="btn-main" target="_blank">
                        CÓMO LLEGAR
                     </a>
                 </div>
                 <div class="map">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.335352467576!2d-0.3923!3d39.54!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60413555555555%3A0x1234567890abcdef!2sCarrer%20Zorrilla%2C%207%2C%2046113%20Alfara%20del%20Patriarca%2C%20Valencia!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" 
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        width="100%" height="100%" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -68,8 +71,25 @@
 <a href="https://wa.me/34697242656?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20en%20Tetuani%20🍔" 
    class="floating-btn" 
    target="_blank">
-   <span style="font-size: 1.8rem;">📱</span>
+   <span>📱</span>
 </a>
+
+<button class="back-to-top" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+    <script>
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 250) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
     <footer>
         <p>© 2026 Tetuani. Desarrollado por Iván Marco.</p>
     </footer>
