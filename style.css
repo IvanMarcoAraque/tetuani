@@ -581,5 +581,5 @@ footer {
     .back-btn { padding: 6px 10px; font-size: 0.8rem; }
 
     /* Logo y h1 en móvil */
-    .logo, h1 { font-size: 0.9rem; white-space: nowrap; letter-spacing: 0.5px; }
+    .logo, h1 { font-size: 1.4rem; }
 }
